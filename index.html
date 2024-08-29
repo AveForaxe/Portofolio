@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nina Ayu Desita</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Nina Ayu Desita</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+    <!--Navbar-->
+
+    <!-- Header-->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Selamat datang di Halaman Portofolio Ayu Nina Desita</h1>
+        </div>
+    </header>    
+    <!-- Header -->
+
+    <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>Hai saya Ayu Nina Desita Kalian bisa panggil saya Bu Nina, Saya sehari-hari bekerja sebagai guru di SMK NASIONAL MALANG dan saya juga gemar membaca buku.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="foto1 (1).jpg" alt="About Me" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- About -->
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-light py-5">  
+        <div class="container">
+            <h2 class="text-center">Pekerjaan Saya</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2"></div> <!-- Kolom Kosong untuk Imbang Kanan Kiri -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Nina.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Master Of Ceremony</h5>
+                            <p class="card-text">Saya memiliki pengalaman sebagai MC dalam berbagai acara, seperti Masa Pengenalan Lingkungan Sekolah (MPLS), class meeting, dan acara wisuda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="https://via.placeholder.com/350x250" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Guru</h5>
+                            <p class="card-text">Saya juga berpengalaman sebagai guru bahasa indonesia, dan saya selalu bisa berinteraksi dengan asyik bersama murid-murid karena menurut saya, anak-anak itu lucu dan menyenangkan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div> <!-- Kolom Kosong untuk Imbang Kanan Kiri -->
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p>You can find me on social media:</p>
+            <a href="https://www.instagram.com/ninadesita" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 50px; height: 50px;">
+            </a>
+        </div>
+    </section>
+        
+    <!-- COntact -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Ayu Nina Desita. All rights reserved.</p>
+        </div>
+    </footer>    
+    <!-- Footer -->
+    
+</body>
+
+<script>
+    document.getElementById('darkModeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('.navbar').classList.toggle('dark-mode');
+        document.querySelectorAll('.card').forEach(function(card) {
+            card.classList.toggle('dark-mode');
+        });
+        document.querySelectorAll('.bg-light').forEach(function(element) {
+            element.classList.toggle('dark-mode');
+        });
+        document.querySelector('.bg-primary').classList.toggle('dark-mode');
+        document.querySelector('.bg-dark').classList.toggle('dark-mode');
+        this.classList.toggle('dark-mode');
+    });
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>

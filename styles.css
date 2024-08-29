@@ -1,0 +1,64 @@
+/* Light mode for navbar (lighter blue) */
+.navbar {
+    background-color: #5f9ea0; /* Warna biru cerah */
+}
+
+/* Centering the portfolio section */
+#portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height for centering */
+}
+
+#portfolio .container {
+    text-align: center;
+}
+
+/* Dark mode for body */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark mode for navbar */
+.navbar.dark-mode {
+    background-color: #333333 !important;
+    border-color: #444444;
+}
+
+.navbar.dark-mode .navbar-brand,
+.navbar.dark-mode .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar.dark-mode .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Dark mode for cards */
+.card.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Dark mode for light backgrounds */
+.bg-light.dark-mode {
+    background-color: #333333 !important;
+}
+
+/* Dark mode for primary backgrounds */
+.bg-primary.dark-mode {
+    background-color: #1a1a1a !important;
+}
+
+/* Dark mode for dark backgrounds */
+.bg-dark.dark-mode {
+    background-color: #000000 !important;
+}
+
+/* Dark mode for buttons */
+.btn-secondary.dark-mode {
+    background-color: #444444;
+    color: #ffffff;
+}
